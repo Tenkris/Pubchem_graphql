@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large data directories and files
+data/
+
+# Jupyter Notebook
+*.ipynb_checkpoints
+*.ipynb
+
+# Python environment and dependency management files
+Pipfile
+Pipfile.lock
+
+# Docker compose file
+docker-compose.yml
+
+# Specific scripts
+check.py
+graphclass.py
+test.py
