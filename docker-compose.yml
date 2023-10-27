@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  neo4j:
+    image: neo4j:latest
+    container_name: my-neo4j-container
+    environment:
+      NEO4J_AUTH: neo4j/root12345  # Replace "your_password" with your desired password
+    volumes:
+      - ./data:/data  # Mount a local volume for data persistence
+    ports:
+      - "7474:7474"  # HTTP
+      - "7687:7687"  # Bolt
+
+volumes:
+  neo4j-data:
+
